@@ -23,5 +23,7 @@ public interface TransactionService {
 	public Recipient findRecipientByName(String recipientName);
 	public List<Recipient> findRecipientList(Principal principal);
 	public void deleteRecipientByName(String recipientName);
+	public void toSomeoneElseTransfer(Recipient recipient, String accountType, String amount,
+			PrimaryAccount primaryAccount, SavingsAccount savingsAccount);
 
 }
