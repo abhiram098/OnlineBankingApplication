@@ -42,7 +42,7 @@ public class AppointmentController {
         SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd hh:mm");
         Date d1 = format1.parse( date );
         appointment.setDate(d1);
-
+ 
         User user = userService.findByUsername(principal.getName());
         appointment.setUser(user);
 

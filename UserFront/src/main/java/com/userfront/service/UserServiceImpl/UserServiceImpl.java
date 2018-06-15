@@ -92,4 +92,9 @@ public class UserServiceImpl implements UserService{
 
         return localUser;
     }
+
+	@Override
+	public void saveUser(User user) {
+		userDao.save(user);
+	}
 }
